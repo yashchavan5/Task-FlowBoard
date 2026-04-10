@@ -1,4 +1,4 @@
-# Project Name: Task Flowoard 
+# Project Name: Task Flowboard 
 
 A modern Jira-like task management dashboard built using React. This application helps users manage tasks, track sprint progress, and visualize project status in an intuitive UI.
 
