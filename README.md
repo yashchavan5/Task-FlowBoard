@@ -1,58 +1,97 @@
-🚀 Task FlowBoard
+# Project Name: Task Flowoard 
 
-A Modern Jira-like Task Management Application
+A modern Jira-like task management dashboard built using React. This application helps users manage tasks, track sprint progress, and visualize project status in an intuitive UI.
 
-📌 Overview
+---
 
-Task Flow Board is a clean and user-friendly task management application inspired by Jira. It helps users organize, track, and manage tasks efficiently using a Kanban-style board.
+## 📖 Table of Contents
 
-The main goal of this project was to build a smooth, interactive, and visually appealing frontend application using React, focusing on real-world usability and performance.
+- Overview
+- Features
+- Tech Stack
+- Project Structure
+- Installation
+- Usage
+- Screenshots
+- Future Improvements
+- Author
+
+---
+
+ 📌 Overview
+
+The Task Management Dashboard is designed to help teams organize tasks efficiently. It provides a clear overview of project progress, including total tasks, completed tasks, and tasks in progress.
 
 ✨ Features
-📝 Task Management
-Create, update, and delete tasks
-Add task details like:
-Title
-Description
-Assignee
-Deadline
-Status
-📊 Kanban Board
-Tasks are organized into 3 stages:
-Not Started
-In Progress
-Completed
-Easy visualization of workflow
-👥 User Assignment
-Assign tasks to different users
-Simulated user system with avatars
-🔄 Drag & Drop
-Move tasks between columns
-Reorder tasks within the same column
-Smooth and responsive experience
-🎨 UI/UX
-Modern and clean interface
-Fully responsive design
-Smooth animations using Framer Motion
-⚡ Performance & State Management
-Built using React Hooks
-Efficient state handling
-Optimized rendering for better performance
-🛠️ Tech Stack
-React.js – Frontend framework
-Tailwind CSS – Styling
-Framer Motion – Animations
-JavaScript / TypeScript – Logic
-📂 Project Structure
-src/
-│── components/      # Reusable UI components  
-│── pages/           # Main pages  
-│── context/         # Global state management  
-│── data/            # Mock data  
-│── utils/           # Helper functions  
-│── App.js           # Main app  
-│── main.jsx         # Entry point  
-⚙️ Installation & Setup
+
+- 📊 Dashboard with project overview
+- ✅ Task tracking (Not Started, In Progress, Completed)
+- 📈 Sprint progress visualization
+- 🔍 Search functionality
+- 🧩 Modular and reusable components
+- ⚡ Fast and responsive UI
+
+ 🛠️ Tech Stack
+
+- **Frontend:** React.js
+- **Styling:** CSS / Tailwind CSS (if used)
+- **State Management:** useState / useReducer
+- **Build Tool:** Vite / Create React App
+
+ 📂 Project Structure
+Task-FlowBoard/
+│
+├── public/                         # Static files
+│   └── index.html
+│
+├── src/
+│
+│   ├── assets/                     # Images, icons
+│   │   └── avatar.png
+│
+│   ├── components/                 # Reusable UI components
+│   │   ├── TaskCard.tsx            # Task UI component
+│   │   ├── Column.tsx              # Kanban column
+│   │   ├── Navbar.tsx              # Navigation bar
+│   │   ├── Modal.tsx               # Create/Edit task modal
+│   │   ├── UserAvatar.tsx          # User avatar
+│   │   └── DragDropWrapper.tsx     # Drag & drop wrapper
+│
+│   ├── pages/                      # Application pages
+│   │   └── Dashboard.tsx           # Main board UI
+│
+│   ├── context/                    # Global state management
+│   │   └── TaskContext.tsx         # Context API with TypeScript types
+│
+│   ├── types/                      # TypeScript type definitions
+│   │   ├── task.types.ts           # Task interfaces
+│   │   └── user.types.ts           # User interfaces
+│
+│   ├── data/                       # Mock data
+│   │   ├── tasks.ts                # Initial tasks
+│   │   └── users.ts                # Users data
+│
+│   ├── hooks/                      # Custom hooks
+│   │   └── useDragDrop.ts          # Drag & drop logic
+│
+│   ├── utils/                      # Helper functions
+│   │   ├── constants.ts            # Status constants
+│   │   └── helpers.ts              # Utility functions
+│
+│   ├── styles/                     # Global styles
+│   │   └── index.css
+│
+│   ├── App.tsx                     # Root component
+│   ├── main.tsx                    # Entry point
+│
+├── tsconfig.json                   # TypeScript configuration
+├── vite.config.ts                  # Vite config (TS)
+├── tailwind.config.js              # Tailwind config
+├── postcss.config.js               # PostCSS config
+├── package.json                    # Dependencies
+├── .gitignore
+└── README.md   
+
 Clone the repository
 git clone https://github.com/yashchavan5/Task-FlowBoard.git
 Navigate to project folder
@@ -93,3 +132,5 @@ This project helped me understand how real-world task management systems work an
 Yash Chavan
 
 GitHub: https://github.com/yashchavan5
+
+
